@@ -19,6 +19,20 @@ $ composer require heyhoo/gtin
 
 ## Usage
 
+Open your `config/app.php` file and add the ServiceProvider to the providers array:
+
+```
+'providers' => [
+	...
+
+	Heyhoo\Gtin\ValidationServiceProvider::class,
+	
+	...
+],
+```
+
+Now you can use the `gtin` validation:
+
 ```
 $this->validate($request, [
     'somefield' => 'gtin',
