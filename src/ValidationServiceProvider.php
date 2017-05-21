@@ -60,7 +60,7 @@ class ValidationServiceProvider extends ServiceProvider
 
     /**
      * Get the validation error message for a given key.
-     * @param  string  $key
+     * @param  string  $rule
      * @return string|null
      */
     private function getValidationErrorMessage($rule)
@@ -72,7 +72,8 @@ class ValidationServiceProvider extends ServiceProvider
 
     /**
      * Get the custom error message for a given key.
-     * @param  string  $key
+     * @param  string  $attribute
+     * @param  string  $rule
      * @return string|null
      */
     private function getCustomErrorMessage($attribute, $rule)
