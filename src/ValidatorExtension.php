@@ -5,7 +5,7 @@ namespace Heyhoo\Gtin;
 class ValidatorExtension extends \Illuminate\Validation\Validator
 {
     /**
-     * Proved 'gtin' validation rule for Laravel
+     * Proved 'gtin' validation rule for Laravel.
      *
      * @return bool
      */
