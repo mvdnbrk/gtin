@@ -65,7 +65,9 @@ class ValidationServiceProvider extends ServiceProvider
      */
     private function getValidationErrorMessage($rule)
     {
-        return collect(__("validation.{$rule}"))->reject("validation.{$rule}")->first();
+        return collect(__("validation.{$rule}"))
+            ->reject("validation.{$rule}")
+            ->first();
     }
 
     /**
@@ -75,7 +77,9 @@ class ValidationServiceProvider extends ServiceProvider
      */
     private function getCustomErrorMessage($attribute, $rule)
     {
-        return collect(__("validation.custom.{$attribute}.{$rule}"))->reject("validation.custom.{$attribute}.{$rule}")->first();
+        return collect(__("validation.custom.{$attribute}.{$rule}"))
+            ->reject("validation.custom.{$attribute}.{$rule}")
+            ->first();
     }
 
     /**
