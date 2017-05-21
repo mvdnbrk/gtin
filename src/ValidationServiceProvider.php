@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class ValidationServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *
@@ -20,7 +19,6 @@ class ValidationServiceProvider extends ServiceProvider
         );
 
         $this->app['validator']->resolver(function ($translator, $data, $rules, $messages, $customAttributes) {
-
             $messages['gtin'] = $this->getErrorMessage($translator, $rules, $messages, 'gtin');
 
             return new ValidatorExtension($translator, $data, $rules, $messages, $customAttributes);
@@ -28,11 +26,13 @@ class ValidationServiceProvider extends ServiceProvider
     }
 
     /**
-     * Return the matching error message for the key
-     * @param  \Illuminate\Contracts\Translation\Translator  $translator
-     * @param  array  $rules
-     * @param  array  $messages
-     * @param  string  $key
+     * Return the matching error message for the key.
+     *
+     * @param \Illuminate\Contracts\Translation\Translator $translator
+     * @param array                                        $rules
+     * @param array                                        $messages
+     * @param string                                       $key
+     *
      * @return string
      */
     private function getErrorMessage($translator, $rules, $messages, $key)
@@ -50,7 +50,9 @@ class ValidationServiceProvider extends ServiceProvider
 
     /**
      * Get the default error message for a given key.
-     * @param  string  $rule
+     *
+     * @param string $rule
+     *
      * @return string
      */
     private function getPackageDefaultErrorMessage($rule)
@@ -60,7 +62,9 @@ class ValidationServiceProvider extends ServiceProvider
 
     /**
      * Get the validation error message for a given key.
-     * @param  string  $key
+     *
+     * @param string $key
+     *
      * @return string|null
      */
     private function getValidationErrorMessage($rule)
@@ -72,7 +76,9 @@ class ValidationServiceProvider extends ServiceProvider
 
     /**
      * Get the custom error message for a given key.
-     * @param  string  $key
+     *
+     * @param string $key
+     *
      * @return string|null
      */
     private function getCustomErrorMessage($attribute, $rule)
