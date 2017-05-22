@@ -6,11 +6,7 @@ class Validator
 {
     public static function isGtin($value)
     {
-        if (!is_numeric($value)) {
-            return false;
-        }
-
-        if(empty((int)$value)) {
+        if (!is_numeric($value) || empty((int)$value)) {
             return false;
         }
 

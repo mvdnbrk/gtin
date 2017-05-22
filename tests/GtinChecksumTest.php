@@ -24,7 +24,7 @@ class GtinChecksumTest extends TestCase
     public function zeors_should_not_pass()
     {
         $invalid = '0000000000000';
-        $this->assertFalse(Validator::isGtin($invalid)); 
+        $this->assertFalse(Validator::isGtin($invalid));
     }
 
     /** @test */
