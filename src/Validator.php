@@ -10,6 +10,10 @@ class Validator
             return false;
         }
 
+        if(empty((int)$value)) {
+            return false;
+        }
+
         $lastDigit = (int) substr($value, -1);
 
         $sum = collect(str_split($value))
