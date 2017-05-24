@@ -5,7 +5,7 @@ namespace Heyhoo\Gtin;
 class Validator
 {
     /**
-     * Returns wheter the given value is a valid
+     * Checks whether the given value is a valid
      * Global Trade Item Number (GTIN).
      *
      * @param string|int $value The value to be checked
