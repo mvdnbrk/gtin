@@ -4,24 +4,26 @@ namespace Heyhoo\Gtin;
 
 class Validator
 {
+    /**
+     * Returns wheter the given value is a valid
+     * Global Trade Item Number (GTIN).
+     *
+     * @param string|int $value The value to be checked
+     *
+     * @return bool
+     */
     public static function isGtin($value)
     {
-        if (!is_numeric($value) || empty((int) $value)) {
-            return false;
-        }
-
-        $lastDigit = (int) substr($value, -1);
-
-        $sum = collect(str_split($value))
+        return substr($value, 0, -1).collect(str_split($value))
             ->slice(0, -1)
+            ->pipe(function ($collection) {
+                return $collection->sum() === 0 ? collect(1) : $collection;
+            })
             ->map(function ($digit, $key) {
                 return $key % 2 === 0 ? $digit : 3 * $digit;
             })
-            ->sum();
-
-        $nearestTen = ceil($sum / 10) * 10;
-        $checksum = (int) $nearestTen - $sum;
-
-        return $lastDigit === $checksum;
+            ->pipe(function ($collection) {
+                return (int) ceil($collection->sum() / 10) * 10 - $collection->sum();
+            }) === $value;
     }
 }
