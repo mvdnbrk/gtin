@@ -19,8 +19,10 @@ class Validator
             ->pipe(function ($collection) {
                 return $collection->sum() === 0 ? collect(1) : $collection;
             })
+            ->reverse()
+            ->values()
             ->map(function ($digit, $key) {
-                return $key % 2 === 0 ? $digit : 3 * $digit;
+                return $key % 2 === 0 ? $digit * 3 : $digit;
             })
             ->pipe(function ($collection) {
                 return (int) ceil($collection->sum() / 10) * 10 - $collection->sum();
