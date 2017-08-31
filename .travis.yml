@@ -10,9 +10,9 @@ php:
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
-## Cache composer
 cache:
   directories:
+    - vendor
     - $HOME/.composer/cache
 
 matrix:
@@ -27,8 +27,8 @@ before_install:
   # Force hhvm PHP 7 mode
   - if [[ $TRAVIS_PHP_VERSION = hhv* ]]; then echo hhvm.php7.all=1 >> /etc/hhvm/php.ini; fi
 
-before_script:
-  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
+install:
+  - travis_retry composer install
 
 script:
   - vendor/bin/phpcs --standard=psr2 src/
