@@ -22,6 +22,7 @@ matrix:
     - php: hhvm
       sudo: true
       dist: trusty
+      group: edge # until the next update
 
 before_install:
   # Force hhvm PHP 7 mode
