@@ -19,14 +19,16 @@ $ composer require heyhoo/gtin
 
 ## Usage
 
-Open your `config/app.php` file and add the ServiceProvider to the providers array:
+Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+
+If you don't use auto-discovery, open your `config/app.php` file and add the ServiceProvider to the providers array:
 
 ```
 'providers' => [
 	...
 
 	Heyhoo\Gtin\ValidationServiceProvider::class,
-	
+
 	...
 ],
 ```
