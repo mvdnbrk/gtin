@@ -1,10 +1,7 @@
 language: php
 
 php:
-  - 7.0
   - 7.1
-  - hhvm
-  - nightly
 
 # This triggers builds to run on the new TravisCI infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
@@ -14,19 +11,6 @@ cache:
   directories:
     - vendor
     - $HOME/.composer/cache
-
-matrix:
-  allow_failures:
-    - php: nightly
-  include:
-    - php: hhvm
-      sudo: true
-      dist: trusty
-      group: edge # until the next update
-
-before_install:
-  # Force hhvm PHP 7 mode
-  - if [[ $TRAVIS_PHP_VERSION = hhv* ]]; then echo hhvm.php7.all=1 >> /etc/hhvm/php.ini; fi
 
 install:
   - travis_retry composer install
