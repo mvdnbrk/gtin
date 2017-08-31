@@ -20,7 +20,12 @@ matrix:
     - php: nightly
   include:
     - php: hhvm
+      sudo: true
       dist: trusty
+
+before_install:
+  # Force hhvm PHP 7 mode
+  - if [[ $TRAVIS_PHP_VERSION = hhv* ]]; then echo hhvm.php7.all=1 >> /etc/hhvm/php.ini; fi
 
 before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
