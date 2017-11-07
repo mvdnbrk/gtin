@@ -1,6 +1,6 @@
 <?php
 
-namespace Heyhoo\Gtin;
+namespace Mvdnbrk\Gtin;
 
 use Illuminate\Support\ServiceProvider;
 

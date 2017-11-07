@@ -1,8 +1,8 @@
 {
-    "name": "heyhoo/gtin",
+    "name": "mvdnbrk/gtin",
     "type": "library",
     "description": "GTIN Validation",
-    "homepage": "https://github.com/heyhoo/gtin",
+    "homepage": "https://github.com/mvdnbrk/gtin",
     "keywords": [
         "laravel",
         "ean",
@@ -15,7 +15,7 @@
     "authors": [
         {
             "name": "Mark van den Broek",
-            "email": "mark@heyhoo.nl"
+            "email": "mvdnbrk@gmail.com"
         }
     ],
     "require": {
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Heyhoo\\Gtin\\": "src"
+            "Mvdnbrk\\Gtin\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Heyhoo\\Gtin\\": "tests"
+            "Mvdnbrk\\Gtin\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Heyhoo\\Gtin\\ValidationServiceProvider"
+                "Mvdnbrk\\Gtin\\ValidationServiceProvider"
             ]
         }
     },

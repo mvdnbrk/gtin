@@ -14,7 +14,7 @@ Extension for the Laravel validation class
 Require the package via Composer:
 
 ``` bash
-$ composer require heyhoo/gtin
+$ composer require mvdnbrk/gtin
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ If you don't use auto-discovery, open your `config/app.php` file and add the Ser
 'providers' => [
 	...
 
-	Heyhoo\Gtin\ValidationServiceProvider::class,
+	Mvdnbrk\Gtin\ValidationServiceProvider::class,
 
 	...
 ],
@@ -67,16 +67,16 @@ Or you may pass the custom messages as the third argument to the `Validator::mak
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/heyhoo/gtin.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/mvdnbrk/gtin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/heyhoo/gtin/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/heyhoo/gtin.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/heyhoo/gtin.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/mvdnbrk/gtin/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/mvdnbrk/gtin.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/mvdnbrk/gtin.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/gtin/model.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/heyhoo/gtin
-[link-travis]: https://travis-ci.org/heyhoo/gtin
-[link-scrutinizer]: https://scrutinizer-ci.com/g/heyhoo/gtin/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/heyhoo/gtin
-[link-downloads]: https://packagist.org/packages/heyhoo/gtin
-[link-author]: https://github.com/heyhoo
+[link-packagist]: https://packagist.org/packages/mvdnbrk/gtin
+[link-travis]: https://travis-ci.org/mvdnbrk/gtin
+[link-scrutinizer]: https://scrutinizer-ci.com/g/mvdnbrk/gtin/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/mvdnbrk/gtin
+[link-downloads]: https://packagist.org/packages/mvdnbrk/gtin
+[link-author]: https://github.com/mvdnbrk

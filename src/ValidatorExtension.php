@@ -1,6 +1,6 @@
 <?php
 
-namespace Heyhoo\Gtin;
+namespace Mvdnbrk\Gtin;
 
 class ValidatorExtension extends \Illuminate\Validation\Validator
 {
