@@ -63,6 +63,12 @@ To customize the error message add your messages to the `custom` array in the `r
 
 Or you may pass the custom messages as the third argument to the `Validator::make` method like [described in the docs](https://laravel.com/docs/5.4/validation#custom-error-messages).
 
+## Testing
+
+```
+$ composer test
+```
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
