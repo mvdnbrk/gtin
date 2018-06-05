@@ -1,15 +1,16 @@
 {
     "name": "mvdnbrk/gtin",
     "type": "library",
-    "description": "GTIN Validation",
+    "description": "GTIN / EAN / UPC Validation for Laravel",
     "homepage": "https://github.com/mvdnbrk/gtin",
     "keywords": [
         "laravel",
-        "ean",
-        "gtin",
-        "gs1",
         "validation",
-        "validator"
+        "validator",
+        "ean",
+        "upc",
+        "gtin",
+        "gs1"
     ],
     "license": "MIT",
     "authors": [
