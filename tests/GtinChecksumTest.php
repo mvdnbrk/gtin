@@ -6,46 +6,67 @@ use Mvdnbrk\Gtin\Validator;
 
 class GtinChecksumTest extends TestCase
 {
+    protected $validator;
+
+    public function setUp()
+    {
+        parent::setUp();
+
+        $this->validator = $this->app['validator'];
+    }
+
     /** @test */
     public function a_valid_gtin8_should_pass()
     {
-        $valid = '80000006';
-        $this->assertTrue(Validator::isGtin($valid));
+        $this->assertTrue($this->validator->make(
+            ['field' => '80000006'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function an_invalid_gtin8_should_not_pass()
     {
-        $valid = '80000000';
-        $this->assertFalse(Validator::isGtin($valid));
+        $this->assertFalse($this->validator->make(
+            ['field' => '80000000'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function a_valid_gtin12_should_pass()
     {
-        $valid = '120000000005';
-        $this->assertTrue(Validator::isGtin($valid));
+        $this->assertTrue($this->validator->make(
+            ['field' => '120000000005'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function an_invalid_gtin12_should_not_pass()
     {
-        $valid = '120000000000';
-        $this->assertFalse(Validator::isGtin($valid));
+        $this->assertFalse($this->validator->make(
+            ['field' => '120000000000'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function a_valid_gtin13_should_pass()
     {
-        $valid = '1300000000000';
-        $this->assertTrue(Validator::isGtin($valid));
+        $this->assertTrue($this->validator->make(
+            ['field' => '1300000000000'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function an_invalid_gtin13_should_not_pass()
     {
-        $invalid = '1300000000001';
-        $this->assertFalse(Validator::isGtin($invalid));
+        $this->assertFalse($this->validator->make(
+            ['field' => '1300000000001'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
@@ -58,28 +79,27 @@ class GtinChecksumTest extends TestCase
     /** @test */
     public function an_invalid_gtin14_should_not_pass()
     {
-        $invalid = '14000000000000';
-        $this->assertFalse(Validator::isGtin($invalid));
+        $this->assertFalse($this->validator->make(
+            ['field' => '14000000000000'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function zeors_should_not_pass()
     {
-        $invalid = '0000000000000';
-        $this->assertFalse(Validator::isGtin($invalid));
+        $this->assertFalse($this->validator->make(
+            ['field' => '0000000000000'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
     public function a_string_should_not_pass()
     {
-        $invalid = 'string';
-        $this->assertFalse(Validator::isGtin($invalid));
-    }
-
-    /** @test */
-    public function an_empty_string_should_not_pass()
-    {
-        $invalid = '';
-        $this->assertFalse(Validator::isGtin($invalid));
+        $this->assertFalse($this->validator->make(
+            ['field' => 'string'],
+            ['field' => 'gtin']
+        )->passes());
     }
 }
