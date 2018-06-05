@@ -1,6 +1,6 @@
 <?php
 
-namespace Mvdnbrk\Gtin;
+namespace Mvdnbrk\Gtin\Tests;
 
 use PHPUnit\Framework\TestCase;
 
