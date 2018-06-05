@@ -2,7 +2,7 @@
 
 namespace Mvdnbrk\Gtin\Tests;
 
-use PHPUnit\Framework\TestCase;
+use Mvdnbrk\Gtin\Validator;
 
 class GtinChecksumTest extends TestCase
 {
