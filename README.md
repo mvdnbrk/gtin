@@ -5,6 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
+[![StyleCI][ico-styleci]][link-styleci]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Extension for the Laravel validation class
@@ -79,10 +80,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/mvdnbrk/gtin.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/mvdnbrk/gtin.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/gtin/model.svg?style=flat-square
+[ico-styleci]: https://github.styleci.io/repos/91986121/shield?style=flat-square&branch=master
 
 [link-packagist]: https://packagist.org/packages/mvdnbrk/gtin
 [link-travis]: https://travis-ci.org/mvdnbrk/gtin
 [link-scrutinizer]: https://scrutinizer-ci.com/g/mvdnbrk/gtin/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/mvdnbrk/gtin
 [link-downloads]: https://packagist.org/packages/mvdnbrk/gtin
+[link-styleci]: https://github.styleci.io/repos/91986121
 [link-author]: https://github.com/mvdnbrk
