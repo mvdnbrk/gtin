@@ -4,7 +4,7 @@ namespace Mvdnbrk\Gtin;
 
 use Illuminate\Support\ServiceProvider;
 
-class ValidationServiceProvider extends ServiceProvider
+class GtinValidationServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
