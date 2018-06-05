@@ -19,7 +19,7 @@ $ composer require mvdnbrk/gtin
 
 ## Usage
 
-Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+Laravel 5.5 or higher uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
 
 If you don't use auto-discovery, open your `config/app.php` file and add the ServiceProvider to the providers array:
 
