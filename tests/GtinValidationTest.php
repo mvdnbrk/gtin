@@ -4,7 +4,7 @@ namespace Mvdnbrk\Gtin\Tests;
 
 use Mvdnbrk\Gtin\Validator;
 
-class GtinChecksumTest extends TestCase
+class GtinValidationTest extends TestCase
 {
     protected $validator;
 
