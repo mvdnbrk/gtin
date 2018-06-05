@@ -102,4 +102,18 @@ class GtinValidationTest extends TestCase
             ['field' => 'gtin']
         )->passes());
     }
+
+    /** @test */
+    public function it_returns_the_correct_error_message()
+    {
+        $validation = $this->validator->make(
+            ['field' => 'invalid-gtin'],
+            ['field' => 'gtin']
+        );
+
+        $this->assertEquals(
+            'The field must be a valid Global Trade Item Number (GTIN).',
+            $validation->errors()->first('field')
+        );
+    }
 }
