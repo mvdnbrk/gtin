@@ -65,7 +65,7 @@ Or you may pass the custom messages as the third argument to the `Validator::mak
 
 ## Testing
 
-```
+``` bash
 $ composer test
 ```
 
