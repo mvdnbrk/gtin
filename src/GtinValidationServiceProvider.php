@@ -88,14 +88,4 @@ class GtinValidationServiceProvider extends ServiceProvider
             ->reject("validation.custom.{$attribute}.{$rule}")
             ->first();
     }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return ['validator'];
-    }
 }
