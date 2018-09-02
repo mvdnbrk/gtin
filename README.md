@@ -8,9 +8,9 @@
 [![StyleCI][ico-styleci]][link-styleci]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Extension for the Laravel validation class
+Extension for the Laravel validation class.
 
-## Install
+## Installation
 
 Require the package via Composer:
 
