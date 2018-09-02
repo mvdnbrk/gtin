@@ -8,9 +8,11 @@
 [![StyleCI][ico-styleci]][link-styleci]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Extension for the Laravel validation class
+Extension for the Laravel validation class.
 
-## Install
+## Installation
+
+This package requires PHP 7 and Laravel 5.5 or higher.
 
 Require the package via Composer:
 
@@ -19,20 +21,6 @@ $ composer require mvdnbrk/gtin
 ```
 
 ## Usage
-
-Laravel 5.5 or higher uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
-
-If you don't use auto-discovery, open your `config/app.php` file and add the ServiceProvider to the providers array:
-
-```
-'providers' => [
-	...
-
-	Mvdnbrk\Gtin\ValidationServiceProvider::class,
-
-	...
-],
-```
 
 Now you can use the `gtin` validation:
 
