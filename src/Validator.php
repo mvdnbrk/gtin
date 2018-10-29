@@ -8,8 +8,7 @@ class Validator
      * Checks whether the given value is a valid
      * Global Trade Item Number (GTIN).
      *
-     * @param string|int $value The value to be checked
-     *
+     * @param string|int $value
      * @return bool
      */
     public static function isGtin($value)

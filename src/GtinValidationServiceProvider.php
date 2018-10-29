@@ -29,10 +29,9 @@ class GtinValidationServiceProvider extends ServiceProvider
      * Return the matching error message for the key.
      *
      * @param \Illuminate\Contracts\Translation\Translator $translator
-     * @param array                                        $rules
-     * @param array                                        $messages
-     * @param string                                       $key
-     *
+     * @param array $rules
+     * @param array $messages
+     * @param string $key
      * @return string
      */
     private function getErrorMessage($translator, $rules, $messages, $key)
@@ -52,7 +51,6 @@ class GtinValidationServiceProvider extends ServiceProvider
      * Get the default error message for a given key.
      *
      * @param string $rule
-     *
      * @return string
      */
     private function getPackageDefaultErrorMessage($rule)
@@ -64,7 +62,6 @@ class GtinValidationServiceProvider extends ServiceProvider
      * Get the validation error message for a given key.
      *
      * @param string $rule
-     *
      * @return string|null
      */
     private function getValidationErrorMessage($rule)
@@ -79,7 +76,6 @@ class GtinValidationServiceProvider extends ServiceProvider
      *
      * @param string $attribute
      * @param string $rule
-     *
      * @return string|null
      */
     private function getCustomErrorMessage($attribute, $rule)
