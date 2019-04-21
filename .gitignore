@@ -1,2 +1,9 @@
+.env
+.DS_Store
+.phpunit.xml
+.phpunit.result.cache
+build
 composer.lock
+docs
 vendor
+coverage
