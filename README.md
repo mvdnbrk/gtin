@@ -58,6 +58,19 @@ Or you may pass the custom messages as the third argument to the `Validator::mak
 $ composer test
 ```
 
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Security
+
+If you discover any security related issues, please email mvdnbrk@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Mark van den Broek](https://github.com/mvdnbrk)
+- [All Contributors](../../contributors)
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
