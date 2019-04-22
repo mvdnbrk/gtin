@@ -17,6 +17,10 @@ class Validator
             return false;
         }
 
+        if (! preg_match('/^\d{8}(?:\d{4,6})?$/', $value)) {
+            return false;
+        }
+
         return substr($value, 0, -1).collect(str_split($value))
             ->slice(0, -1)
             ->pipe(function ($collection) {

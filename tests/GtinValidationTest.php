@@ -97,6 +97,51 @@ class GtinValidationTest extends TestCase
     }
 
     /** @test */
+    public function a_too_short_value_should_not_pass()
+    {
+        $this->assertFalse($this->validator->make(
+            ['field' => '7000003'],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
+    public function a_too_long_value_should_not_pass()
+    {
+        $this->assertFalse($this->validator->make(
+            ['field' => '150000000000004'],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
+    public function a_value_with_a_length_of_nine_digits_should_not_pass()
+    {
+        $this->assertFalse($this->validator->make(
+            ['field' => '900000001'],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
+    public function a_value_with_a_length_of_ten_digits_should_not_pass()
+    {
+        $this->assertFalse($this->validator->make(
+            ['field' => '1000000007'],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
+    public function a_value_with_a_length_of_eleven_digits_should_not_pass()
+    {
+        $this->assertFalse($this->validator->make(
+            ['field' => '11000000006'],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
     public function zeros_should_not_pass()
     {
         $this->assertFalse($this->validator->make(
