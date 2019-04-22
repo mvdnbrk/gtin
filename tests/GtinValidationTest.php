@@ -95,7 +95,7 @@ class GtinValidationTest extends TestCase
     }
 
     /** @test */
-    public function zeors_should_not_pass()
+    public function zeros_should_not_pass()
     {
         $this->assertFalse($this->validator->make(
             ['field' => '0000000000000'],
