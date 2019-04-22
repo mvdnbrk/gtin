@@ -50,7 +50,7 @@ To customize the error message add your messages to the `custom` array in the `r
 }
 ```
 
-Or you may pass the custom messages as the third argument to the `Validator::make` method like [described in the docs](https://laravel.com/docs/validation#custom-error-messages).
+Or you may pass custom messages as the third argument to the `Validator::make` method as [described in the docs](https://laravel.com/docs/validation#custom-error-messages).
 
 ## Testing
 
