@@ -86,6 +86,15 @@ class GtinValidationTest extends TestCase
     }
 
     /** @test */
+    public function a_valid_gtin_integer_value_should_pass()
+    {
+        $this->assertTrue($this->validator->make(
+            ['field' => 80000006],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
     public function zeors_should_not_pass()
     {
         $this->assertFalse($this->validator->make(

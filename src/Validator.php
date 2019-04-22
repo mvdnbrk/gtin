@@ -29,6 +29,6 @@ class Validator
             })
             ->pipe(function ($collection) {
                 return (int) ceil($collection->sum() / 10) * 10 - $collection->sum();
-            }) === $value;
+            }) == $value;
     }
 }
