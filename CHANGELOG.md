@@ -4,6 +4,9 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+### Fixed
+- Fixed validation. Only allow GTIN-8, GTIN-12, GTIN-13, GTIN-14 values. [`02266f1`](https://github.com/mvdnbrk/gtin/commit/02266f1bf85d018209548322cc942cf25afab439)
+
 ## [v2.1.0] - 2019-04-22
 
 ### Fixed
