@@ -13,6 +13,10 @@ class Validator
      */
     public static function isGtin($value)
     {
+        if (! is_numeric($value)) {
+            return false;
+        }
+
         return substr($value, 0, -1).collect(str_split($value))
             ->slice(0, -1)
             ->pipe(function ($collection) {

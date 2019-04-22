@@ -104,6 +104,15 @@ class GtinValidationTest extends TestCase
     }
 
     /** @test */
+    public function an_array_should_not_pass()
+    {
+        $this->assertFalse($this->validator->make(
+            ['field' => []],
+            ['field' => 'gtin']
+        )->passes());
+    }
+
+    /** @test */
     public function it_returns_the_correct_error_message()
     {
         $validation = $this->validator->make(
