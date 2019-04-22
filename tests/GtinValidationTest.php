@@ -72,8 +72,10 @@ class GtinValidationTest extends TestCase
     /** @test */
     public function a_valid_gtin14_should_pass()
     {
-        $valid = '14000000000003';
-        $this->assertTrue(Validator::isGtin($valid));
+        $this->assertTrue($this->validator->make(
+            ['field' => '14000000000003'],
+            ['field' => 'gtin']
+        )->passes());
     }
 
     /** @test */
