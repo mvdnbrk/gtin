@@ -11,7 +11,7 @@ class Validator
      * @param  string|int  $value
      * @return bool
      */
-    public static function isGtin($value)
+    public function isGtin($value)
     {
         if (! is_numeric($value)) {
             return false;
