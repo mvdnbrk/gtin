@@ -22,7 +22,7 @@ $ composer require mvdnbrk/gtin
 
 ## Usage
 
-Now you can use the `gtin` validation:
+Now you can use the `gtin` validation to validate a GTIN-8, GTIN-12, GTIN-13 or GTIN-14:
 
 ```php
 $this->validate($request, [
