@@ -24,7 +24,7 @@ $ composer require mvdnbrk/gtin
 
 Now you can use the `gtin` validation:
 
-```
+```php
 $this->validate($request, [
     'somefield' => 'gtin',
 ]);
@@ -34,7 +34,7 @@ $this->validate($request, [
 
 To customize the error message add your messages to the `custom` array in the `resources/lang/<language>/validation.php` language file.
 
-```
+```php
 'custom' => [
     'somefield' => [
         'gtin' => 'Please enter a valid GTIN!',
@@ -44,7 +44,7 @@ To customize the error message add your messages to the `custom` array in the `r
 
  Or in the JSON file stored in `resources/lang/<language>.json`
 
-```
+```javascript
 {
     "validation.custom.somefield.gtin": "Please enter a valid GTIN!"
 }
