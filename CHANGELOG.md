@@ -4,6 +4,8 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.1.1] - 2019-04-22
+
 ### Fixed
 - Fixed validation. Only allow GTIN-8, GTIN-12, GTIN-13, GTIN-14 values. [`02266f1`](https://github.com/mvdnbrk/gtin/commit/02266f1bf85d018209548322cc942cf25afab439)
 
@@ -21,6 +23,7 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.1.1...HEAD
+[v2.1.1]: https://github.com/mvdnbrk/gtin/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/mvdnbrk/gtin/compare/v2.0.6...v2.1.0
 [v2.0.6]: https://github.com/mvdnbrk/gtin/compare/v2.0.5...v2.0.6
