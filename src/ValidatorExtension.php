@@ -14,6 +14,6 @@ class ValidatorExtension extends \Illuminate\Validation\Validator
      */
     public function validateGtin($attribute, $value, $parameters)
     {
-        return (new Validator)->isGtin($value);
+        return Validator::isGtin($value);
     }
 }
