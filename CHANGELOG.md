@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.1.2] - 2019-05-06
+
+### Changed
+- Changed `isGtin` to a static method. [`08acf40`](https://github.com/mvdnbrk/gtin/commit/08acf40807e1c6ee699111fafb4025417fee6e52)
+
 ## [v2.1.1] - 2019-04-22
 
 ### Fixed
@@ -23,7 +28,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.1.1...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.1.2...HEAD
+[v2.1.2]: https://github.com/mvdnbrk/gtin/compare/v2.1.1...v2.1.2
 [v2.1.1]: https://github.com/mvdnbrk/gtin/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/mvdnbrk/gtin/compare/v2.0.6...v2.1.0
 [v2.0.6]: https://github.com/mvdnbrk/gtin/compare/v2.0.5...v2.0.6
