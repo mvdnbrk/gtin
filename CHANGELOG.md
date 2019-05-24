@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.2.1] - 2019-05-24
+
+### Fixed
+- Fixed autoloading. [`ef607b1`](https://github.com/mvdnbrk/gtin/commit/ef607b13edaa7d9e375b66c711c02918148b199a)
+
 ## [v2.2.0] - 2019-05-24
 
 ### Added
@@ -33,7 +38,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.2.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.2.1...HEAD
+[v2.2.1]: https://github.com/mvdnbrk/gtin/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/mvdnbrk/gtin/compare/v2.1.2...v2.2.0
 [v2.1.2]: https://github.com/mvdnbrk/gtin/compare/v2.1.1...v2.1.2
 [v2.1.1]: https://github.com/mvdnbrk/gtin/compare/v2.1.0...v2.1.1
