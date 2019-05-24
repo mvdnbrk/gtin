@@ -30,15 +30,15 @@
     "autoload": {
         "psr-4": {
             "Mvdnbrk\\Gtin\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Mvdnbrk\\Gtin\\Tests\\": "tests"
         },
         "files": [
             "src/helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mvdnbrk\\Gtin\\Tests\\": "tests"
+        }
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
