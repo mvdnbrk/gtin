@@ -30,7 +30,7 @@ $this->validate($request, [
 ]);
 ```
 
-## Specifying custom error message in language files
+### Specifying custom error message in language files
 
 To customize the error message add your messages to the `custom` array in the `resources/lang/<language>/validation.php` language file.
 
@@ -51,6 +51,16 @@ To customize the error message add your messages to the `custom` array in the `r
 ```
 
 Or you may pass custom messages as the third argument to the `Validator::make` method as [described in the docs](https://laravel.com/docs/validation#custom-error-messages).
+
+### Helper function
+
+This package exposes a `is_gtin()` helper function to quickly validate a GTIN.  
+It will return a `boolean` whether the given value is a valid GTIN or not:
+
+```php
+is_gtin('1300000000000')    // returns true
+is_gtin('1234567891234')    // returns false
+```
 
 ## Testing
 
