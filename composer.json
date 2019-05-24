@@ -35,7 +35,10 @@
     "autoload-dev": {
         "psr-4": {
             "Mvdnbrk\\Gtin\\Tests\\": "tests"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "scripts": {
         "test": "vendor/bin/phpunit"

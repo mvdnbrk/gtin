@@ -181,4 +181,10 @@ class GtinValidationTest extends TestCase
             $validation->errors()->first('field')
         );
     }
+
+    /** @test */
+    public function it_has_a_helper_function()
+    {
+        $this->assertTrue(is_gtin('1300000000000'));
+    }
 }
