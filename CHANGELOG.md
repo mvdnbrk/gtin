@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.2.0] - 2019-05-24
+
+### Added
+- Added an `isGtin()` helper function. [`4994e1d`](https://github.com/mvdnbrk/gtin/commit/4994e1df4ff506a0bda18a422537afae7ed18962)
+
 ## [v2.1.2] - 2019-05-06
 
 ### Changed
@@ -28,7 +33,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.1.2...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.2.0...HEAD
+[v2.2.0]: https://github.com/mvdnbrk/gtin/compare/v2.1.2...v2.2.0
 [v2.1.2]: https://github.com/mvdnbrk/gtin/compare/v2.1.1...v2.1.2
 [v2.1.1]: https://github.com/mvdnbrk/gtin/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/mvdnbrk/gtin/compare/v2.0.6...v2.1.0
