@@ -1,6 +1,6 @@
 <?php
 
-use Mvdnbrk\Gtin\Validator;
+use Mvdnbrk\Gtin\Validator as GtinValidator;
 
 if (! function_exists('is_gtin')) {
     /**
@@ -11,6 +11,6 @@ if (! function_exists('is_gtin')) {
      */
     function is_gtin($value)
     {
-        return Validator::isGtin($value);
+        return GtinValidator::isGtin($value);
     }
 }
