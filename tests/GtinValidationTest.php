@@ -6,8 +6,16 @@ use Mvdnbrk\Gtin\Validator;
 
 class GtinValidationTest extends TestCase
 {
+    /**
+     * @var \Illuminate\Validation\Factory
+     */
     protected $validator;
 
+    /**
+     * Setup the test environment.
+     *
+     * @return void
+     */
     public function setUp(): void
     {
         parent::setUp();
