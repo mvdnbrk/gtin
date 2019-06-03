@@ -19,7 +19,6 @@ class TranslationTest extends TestCase
         parent::setUp();
 
         $this->validator = $this->app['validator'];
-        dd(get_class($this->validator));
     }
 
     /**
