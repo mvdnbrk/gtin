@@ -23,6 +23,30 @@ class GtinValidationServiceProvider extends ServiceProvider
     }
 
     /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->offerPublishing();
+    }
+
+    /**
+     * Setup the resource publishing.
+     *
+     * @return void
+     */
+    protected function offerPublishing()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/../resources/lang' => resource_path('lang/vendor/gtin'),
+            ], 'gtin-lang');
+        }
+    }
+
+    /**
      * Return the matching error message for the key.
      *
      * @param  array  $rules
