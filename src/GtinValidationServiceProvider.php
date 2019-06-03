@@ -13,7 +13,7 @@ class GtinValidationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'validation');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'gtin');
 
         $this->app['validator']->resolver(function ($translator, $data, $rules) {
             return new ValidatorExtension($translator, $data, $rules, [
@@ -49,7 +49,7 @@ class GtinValidationServiceProvider extends ServiceProvider
      */
     private function getPackageDefaultErrorMessage($rule)
     {
-        return __("validation::validation.{$rule}");
+        return __("gtin::validation.{$rule}");
     }
 
     /**
