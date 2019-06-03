@@ -18,10 +18,10 @@ class GtinValidationServiceProvider extends ServiceProvider
             'validation'
         );
 
-        $this->app['validator']->resolver(function ($translator, $data, $rules, $messages, $customAttributes) {
+        $this->app['validator']->resolver(function ($translator, $data, $rules, $messages) {
             $messages['gtin'] = $this->getErrorMessage($translator, $rules, $messages, 'gtin');
 
-            return new ValidatorExtension($translator, $data, $rules, $messages, $customAttributes);
+            return new ValidatorExtension($translator, $data, $rules, $messages);
         });
     }
 
