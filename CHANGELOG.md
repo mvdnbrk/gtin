@@ -4,6 +4,15 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.3.0] - 2019-06-03
+
+### Added
+- Added translations. [`e66ac04`](https://github.com/mvdnbrk/gtin/commit/e66ac04a7deffdd887ee4ec1a0a427229a52dad7)
+- Added ability to publish translations. [`e5fd1a5`](https://github.com/mvdnbrk/gtin/commit/e5fd1a536fa67c922c535f9f2aad662de000c96ca)
+
+### Fixed
+- Removed unused parameters.  [`c0ec5f5`](https://github.com/mvdnbrk/gtin/commit/c0ec5f5986d304fbba99551fbc98a7cfdc7b6a42), [`1f9c5aa`](https://github.com/mvdnbrk/gtin/commit/1f9c5aa8f4dda06239d747f0953990d8bf009798), [`13b598c`](https://github.com/mvdnbrk/gtin/commit/13b598c58be904c717b12752a80242309e755054), [`8993154`](https://github.com/mvdnbrk/gtin/commit/899315496c2876382aa75d4769b1868299535db8)
+
 ## [v2.2.1] - 2019-05-24
 
 ### Fixed
@@ -38,7 +47,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.2.1...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.0...HEAD
+[v2.3.0]: https://github.com/mvdnbrk/gtin/compare/v2.2.1...v2.3.0
 [v2.2.1]: https://github.com/mvdnbrk/gtin/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/mvdnbrk/gtin/compare/v2.1.2...v2.2.0
 [v2.1.2]: https://github.com/mvdnbrk/gtin/compare/v2.1.1...v2.1.2
