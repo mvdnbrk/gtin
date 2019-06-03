@@ -13,10 +13,7 @@ class GtinValidationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadTranslationsFrom(
-            __DIR__.'/lang',
-            'validation'
-        );
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'validation');
 
         $this->app['validator']->resolver(function ($translator, $data, $rules) {
             return new ValidatorExtension($translator, $data, $rules, [
