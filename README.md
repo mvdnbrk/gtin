@@ -30,9 +30,17 @@ $this->validate($request, [
 ]);
 ```
 
-### Specifying custom error message in language files
+### Specifying a custom error message
 
-To customize the error message add your messages to the `custom` array in the `resources/lang/<language>/validation.php` language file.
+You may publish the language files with the following `artisan` command:
+
+```bash
+php artisan vendor:publish --tag=gtin-lang
+```
+
+Now you can customize the error message in `resources/lang/vendor/gtin/{loale}/validation.php`.
+
+Another option is to define the error message by adding your message to the `custom` array in the `resources/lang/{locale}/validation.php` language file.
 
 ```php
 'custom' => [
@@ -42,7 +50,7 @@ To customize the error message add your messages to the `custom` array in the `r
 ],
 ```
 
- Or in the JSON file stored in `resources/lang/<language>.json`
+ Or with a JSON file stored in `resources/lang/{locale}.json`
 
 ```javascript
 {
@@ -50,7 +58,7 @@ To customize the error message add your messages to the `custom` array in the `r
 }
 ```
 
-Or you may pass custom messages as the third argument to the `Validator::make` method as [described in the docs](https://laravel.com/docs/validation#custom-error-messages).
+Or you may pass custom messages as the third argument to the `Validator::make` method as described in the [Laravel documentation](https://laravel.com/docs/validation#custom-error-messages).
 
 ### Helper function
 
