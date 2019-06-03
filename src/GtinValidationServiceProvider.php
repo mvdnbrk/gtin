@@ -18,10 +18,10 @@ class GtinValidationServiceProvider extends ServiceProvider
             'validation'
         );
 
-        $this->app['validator']->resolver(function ($translator, $data, $rules, $messages) {
-            $messages['gtin'] = $this->getErrorMessage($rules, $messages, 'gtin');
-
-            return new ValidatorExtension($translator, $data, $rules, $messages);
+        $this->app['validator']->resolver(function ($translator, $data, $rules) {
+            return new ValidatorExtension($translator, $data, $rules, [
+                'gtin' => $this->getErrorMessage($rules, 'gtin'),
+            ]);
         });
     }
 
@@ -29,11 +29,10 @@ class GtinValidationServiceProvider extends ServiceProvider
      * Return the matching error message for the key.
      *
      * @param  array  $rules
-     * @param  array  $messages
      * @param  string  $key
      * @return string
      */
-    private function getErrorMessage($rules, $messages, $key)
+    private function getErrorMessage($rules, $key)
     {
         return collect($this->getPackageDefaultErrorMessage($key))
             ->merge($this->getValidationErrorMessage($key))
@@ -42,7 +41,6 @@ class GtinValidationServiceProvider extends ServiceProvider
                     return $this->getCustomErrorMessage($attribute, $key);
                 })->filter()
             )
-            ->merge($messages)
             ->last();
     }
 
