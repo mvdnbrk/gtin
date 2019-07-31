@@ -5,7 +5,7 @@ namespace Mvdnbrk\Gtin;
 class Validator
 {
     /**
-     * Checks whether the given value is a valid
+     * Determines whether the given value is a valid
      * Global Trade Item Number (GTIN).
      *
      * @param  string|int  $value
