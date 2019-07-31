@@ -5,6 +5,13 @@ namespace Mvdnbrk\Gtin;
 class Validator
 {
     /**
+     * The cache of validated gtin values.
+     *
+     * @var array
+     */
+    protected static $cache = [];
+
+    /**
      * Determines whether the given value is a valid
      * Global Trade Item Number (GTIN).
      *
@@ -17,11 +24,15 @@ class Validator
             return false;
         }
 
+        if (isset(static::$cache[$value])) {
+            return static::$cache[$value];
+        }
+
         if (! preg_match('/^\d{8}(?:\d{4,6})?$/', $value)) {
             return false;
         }
 
-        return static::calculate($value);
+        return static::$cache[$value] = static::calculate($value);
     }
 
     /**

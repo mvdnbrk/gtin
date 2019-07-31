@@ -193,4 +193,14 @@ class GtinValidationTest extends TestCase
     {
         $this->assertTrue(is_gtin('1300000000000'));
     }
+
+    /** @test */
+    public function it_validates_the_same_values_against_a_cache()
+    {
+        $this->assertFalse(is_gtin('12345678'));
+        $this->assertFalse(is_gtin('12345678'));
+
+        $this->assertTrue(is_gtin('1300000000000'));
+        $this->assertTrue(is_gtin('1300000000000'));
+    }
 }
