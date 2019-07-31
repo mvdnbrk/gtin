@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.3.1] - 2019-07-31
+
+### Changed
+- Updated version contraints to support Laravel 6.0. [`33cb9a8`](https://github.com/mvdnbrk/gtin/commit/33cb9a82907e63d1a1819b7248ede1334b3923e5)
+
 ## [v2.3.0] - 2019-06-03
 
 ### Added
@@ -47,7 +52,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.1...HEAD
+[v2.3.1]: https://github.com/mvdnbrk/gtin/compare/v2.3.0...v2.3.1
 [v2.3.0]: https://github.com/mvdnbrk/gtin/compare/v2.2.1...v2.3.0
 [v2.2.1]: https://github.com/mvdnbrk/gtin/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/mvdnbrk/gtin/compare/v2.1.2...v2.2.0
