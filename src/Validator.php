@@ -12,7 +12,7 @@ class Validator
     protected static $cache = [];
 
     /**
-     * Determines whether the given value is a valid
+     * Determine whether the given value is a valid
      * Global Trade Item Number (GTIN).
      *
      * @param  string|int  $value
@@ -36,7 +36,7 @@ class Validator
     }
 
     /**
-     * Calculates if the given value has
+     * Calculate if the given value has
      * a correct check digit.
      *
      * @param  string|int  $value
