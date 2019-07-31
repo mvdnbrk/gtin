@@ -1,7 +1,6 @@
 {
     "name": "mvdnbrk/gtin",
     "description": "GTIN / EAN / UPC Validation for Laravel",
-    "homepage": "https://github.com/mvdnbrk/gtin",
     "keywords": [
         "laravel",
         "validation",
@@ -11,21 +10,33 @@
         "gtin",
         "gs1"
     ],
+    "homepage": "https://github.com/mvdnbrk/gtin",
     "license": "MIT",
     "authors": [
         {
             "name": "Mark van den Broek",
-            "email": "mvdnbrk@gmail.com"
+            "email": "mvdnbrk@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-        "illuminate/validation": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0"
+        "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+        "illuminate/validation": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0"
     },
     "require-dev": {
-        "orchestra/testbench": "3.5.*|3.6.*|3.7.*|3.8.*",
-        "phpunit/phpunit": "^6.0|^7.0|^8.0"
+        "orchestra/testbench": "3.5.* || 3.6.* || 3.7.* || 3.8.*",
+        "phpunit/phpunit": "^6.0 || ^7.0 || ^8.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mvdnbrk\\Gtin\\GtinValidationServiceProvider"
+            ]
+        }
     },
     "autoload": {
         "psr-4": {
@@ -42,15 +53,5 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Mvdnbrk\\Gtin\\GtinValidationServiceProvider"
-            ]
-        }
-    },
-    "config": {
-        "sort-packages": true
     }
 }
