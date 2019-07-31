@@ -4,6 +4,14 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.3.2] - 2019-07-31
+
+### Added
+- Added a cache for validated values. [`392e838`](https://github.com/mvdnbrk/gtin/commit/392e838e26c196d6d5e3d9076b5d74866c529713)
+
+### Changed
+- Moved the check digit calculation to it's own method. [`74d477e`](https://github.com/mvdnbrk/gtin/commit/74d477e5bfd8298e7a0a109ca45e637e2e1181ea)
+
 ## [v2.3.1] - 2019-07-31
 
 ### Changed
@@ -52,7 +60,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.1...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.2...HEAD
+[v2.3.2]: https://github.com/mvdnbrk/gtin/compare/v2.3.1...v2.3.2
 [v2.3.1]: https://github.com/mvdnbrk/gtin/compare/v2.3.0...v2.3.1
 [v2.3.0]: https://github.com/mvdnbrk/gtin/compare/v2.2.1...v2.3.0
 [v2.2.1]: https://github.com/mvdnbrk/gtin/compare/v2.2.0...v2.2.1
