@@ -21,6 +21,18 @@ class Validator
             return false;
         }
 
+        return static::calculate($value);
+    }
+
+    /**
+     * Calculates if the given value has
+     * a correct check digit.
+     *
+     * @param  string|int  $value
+     * @return bool
+     */
+    protected static function calculate($value)
+    {
         return substr($value, 0, -1).collect(str_split($value))
             ->slice(0, -1)
             ->pipe(function ($collection) {
