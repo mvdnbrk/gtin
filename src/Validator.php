@@ -32,7 +32,7 @@ class Validator
                 return $key % 2 === 0 ? $digit * 3 : $digit;
             })
             ->pipe(function ($collection) {
-                return (int) ceil($collection->sum() / 10) * 10 - $collection->sum();
+                return ceil($collection->sum() / 10) * 10 - $collection->sum();
             }) == $value;
     }
 }
