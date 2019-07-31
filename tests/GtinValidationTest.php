@@ -2,8 +2,6 @@
 
 namespace Mvdnbrk\Gtin\Tests;
 
-use Mvdnbrk\Gtin\Validator;
-
 class GtinValidationTest extends TestCase
 {
     /**
