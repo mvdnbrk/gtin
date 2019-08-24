@@ -2,6 +2,7 @@
 
 namespace Mvdnbrk\Gtin;
 
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\ServiceProvider;
 
 class GtinValidationServiceProvider extends ServiceProvider
@@ -73,7 +74,7 @@ class GtinValidationServiceProvider extends ServiceProvider
      */
     private function getPackageDefaultErrorMessage($rule)
     {
-        return __("gtin::validation.{$rule}");
+        return Lang::get("gtin::validation.{$rule}");
     }
 
     /**
@@ -84,7 +85,7 @@ class GtinValidationServiceProvider extends ServiceProvider
      */
     private function getValidationErrorMessage($rule)
     {
-        return collect(__("validation.{$rule}"))
+        return collect(Lang::get("validation.{$rule}"))
             ->reject("validation.{$rule}")
             ->first();
     }
@@ -98,7 +99,7 @@ class GtinValidationServiceProvider extends ServiceProvider
      */
     private function getCustomErrorMessage($attribute, $rule)
     {
-        return collect(__("validation.custom.{$attribute}.{$rule}"))
+        return collect(Lang::get("validation.custom.{$attribute}.{$rule}"))
             ->reject("validation.custom.{$attribute}.{$rule}")
             ->first();
     }
