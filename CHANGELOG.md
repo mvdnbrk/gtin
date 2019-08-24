@@ -4,6 +4,12 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.3.3] - 2019-08-24
+
+### Changed
+- Updated matrix to test against Laravel 6.0 [`#7`](https://github.com/mvdnbrk/gtin/pull/7)
+- Replaced helper function with `Lang::get()`. [`a150709`](https://github.com/mvdnbrk/gtin/commit/a150709b7ca7028b469b260a197fb000421ab034)
+
 ## [v2.3.2] - 2019-07-31
 
 ### Added
@@ -60,7 +66,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.2...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.3...HEAD
+[v2.3.3]: https://github.com/mvdnbrk/gtin/compare/v2.3.2...v2.3.3
 [v2.3.2]: https://github.com/mvdnbrk/gtin/compare/v2.3.1...v2.3.2
 [v2.3.1]: https://github.com/mvdnbrk/gtin/compare/v2.3.0...v2.3.1
 [v2.3.0]: https://github.com/mvdnbrk/gtin/compare/v2.2.1...v2.3.0
