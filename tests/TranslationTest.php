@@ -2,25 +2,16 @@
 
 namespace Mvdnbrk\Gtin\Tests;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Validator;
 
 class TranslationTest extends TestCase
 {
-    /**
-     * Define environment setup.
-     *
-     * @param  \Illuminate\Foundation\Application   $app
-     *
-     * @return void
-     */
-    protected function getEnvironmentSetUp($app)
-    {
-        $app['config']->set('app.locale', 'nl');
-    }
-
     /** @test */
     public function an_error_message_gets_translated()
     {
+        App::setLocale('nl');
+
         $validator = Validator::make(
             ['field' => 'invalid-gtin'],
             ['field' => 'gtin']
