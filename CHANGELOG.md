@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.4.2] - 2019-11-23
+
+### Fixed
+- Fixed ability to specify a custom error message. [`#8`](https://github.com/mvdnbrk/gtin/pull/8)
+
 ## [v2.4.1] - 2019-11-23
 
 ### Fixed
@@ -76,7 +81,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.4.1...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.4.2...HEAD
+[v2.4.2]: https://github.com/mvdnbrk/gtin/compare/v2.4.1...v2.4.2
 [v2.4.1]: https://github.com/mvdnbrk/gtin/compare/v2.4.0...v2.4.1
 [v2.4.0]: https://github.com/mvdnbrk/gtin/compare/v2.3.3...v2.4.0
 [v2.3.3]: https://github.com/mvdnbrk/gtin/compare/v2.3.2...v2.3.3
