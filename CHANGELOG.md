@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.4.1] - 2019-11-23
+
+### Fixed
+- Make macro chainable. [`a471b31`](https://github.com/mvdnbrk/gtin/commit/a471b31d3290462a8755b3019e3f73ddc35888b5)
+
 ## [v2.4.0] - 2019-11-23
 
 ### Added
@@ -71,7 +76,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.4.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.4.1...HEAD
+[v2.4.1]: https://github.com/mvdnbrk/gtin/compare/v2.4.0...v2.4.1
 [v2.4.0]: https://github.com/mvdnbrk/gtin/compare/v2.3.3...v2.4.0
 [v2.3.3]: https://github.com/mvdnbrk/gtin/compare/v2.3.2...v2.3.3
 [v2.3.2]: https://github.com/mvdnbrk/gtin/compare/v2.3.1...v2.3.2
