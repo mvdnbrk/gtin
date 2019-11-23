@@ -2,8 +2,6 @@
 
 namespace Mvdnbrk\Gtin\Tests;
 
-use Illuminate\Support\Facades\App;
-
 class GtinValidationTest extends TestCase
 {
     /**
@@ -186,22 +184,6 @@ class GtinValidationTest extends TestCase
 
         $this->assertEquals(
             'The field must be a valid Global Trade Item Number (GTIN).',
-            $validation->errors()->first('field')
-        );
-    }
-
-    /** @test */
-    public function it_returns_the_correct_translated_error_message()
-    {
-        App::setLocale('nl');
-
-        $validation = $this->validator->make(
-            ['field' => 'invalid-gtin'],
-            ['field' => 'gtin']
-        );
-
-        $this->assertEquals(
-            'Het veld field moet een geldig Global Trade Item Number (GTIN) zijn.',
             $validation->errors()->first('field')
         );
     }
