@@ -14,6 +14,8 @@ matrix:
       env: LARAVEL='5.7.*' TESTBENCH='3.7.*'
     - php: 7.1
       env: LARAVEL='5.8.*' TESTBENCH='3.8.*'
+    - php: 7.1
+      env: LARAVEL='6.*' TESTBENCH='4.*'
     - php: 7.2
       env: LARAVEL='5.5.*' TESTBENCH='3.5.*'
     - php: 7.2
@@ -23,7 +25,7 @@ matrix:
     - php: 7.2
       env: LARAVEL='5.8.*' TESTBENCH='3.8.*'
     - php: 7.2
-      env: LARAVEL='6.0.*' TESTBENCH='3.9.*'
+      env: LARAVEL='6.*' TESTBENCH='4.*'
     - php: 7.3
       env: LARAVEL='5.5.*' TESTBENCH='3.5.*'
     - php: 7.3
@@ -33,7 +35,7 @@ matrix:
     - php: 7.3
       env: LARAVEL='5.8.*' TESTBENCH='3.8.*'
     - php: 7.3
-      env: LARAVEL='6.0.*' TESTBENCH='3.9.*'
+      env: LARAVEL='6.*' TESTBENCH='4.*'
   fast_finish: true
 
 cache:
