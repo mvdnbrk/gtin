@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mvdnbrk\\Gtin\\GtinValidationServiceProvider"
+                "Mvdnbrk\\Gtin\\GtinServiceProvider"
             ]
         }
     },

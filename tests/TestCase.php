@@ -2,9 +2,10 @@
 
 namespace Mvdnbrk\Gtin\Tests;
 
-use Orchestra\Testbench\TestCase as BaseTestCase;
+use Mvdnbrk\Gtin\GtinServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
-abstract class TestCase extends BaseTestCase
+abstract class TestCase extends Orchestra
 {
     /**
      * Get package providers.
@@ -15,6 +16,8 @@ abstract class TestCase extends BaseTestCase
      */
     protected function getPackageProviders($app)
     {
-        return ['Mvdnbrk\Gtin\GtinValidationServiceProvider'];
+        return [
+            GtinServiceProvider::class,
+        ];
     }
 }
