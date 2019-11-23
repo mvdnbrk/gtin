@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.4.0] - 2019-11-23
+
+### Added
+- Added blueprint macros.  [`18a096e`](https://github.com/mvdnbrk/gtin/commit/18a096e60198813d75c8427e3f85cfa41273a24b), [`75f7166`](https://github.com/mvdnbrk/gtin/commit/75f7166abf6b4a2c961fc5687911292c6f0424ae)
+
 ## [v2.3.3] - 2019-08-24
 
 ### Changed
@@ -66,7 +71,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.3.3...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.4.0...HEAD
+[v2.4.0]: https://github.com/mvdnbrk/gtin/compare/v2.3.3...v2.4.0
 [v2.3.3]: https://github.com/mvdnbrk/gtin/compare/v2.3.2...v2.3.3
 [v2.3.2]: https://github.com/mvdnbrk/gtin/compare/v2.3.1...v2.3.2
 [v2.3.1]: https://github.com/mvdnbrk/gtin/compare/v2.3.0...v2.3.1
