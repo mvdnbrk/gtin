@@ -59,12 +59,12 @@ class GtinServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             Blueprint::macro('gtin', function ($column = 'gtin', $length = 14) {
                 /* @var \Illuminate\Database\Schema\Blueprint $this */
-                $this->string($column, $length);
+                return $this->string($column, $length);
             });
 
             Blueprint::macro('dropGtin', function ($column = 'gtin') {
                 /* @var \Illuminate\Database\Schema\Blueprint $this */
-                $this->dropColumn($column);
+                return $this->dropColumn($column);
             });
         }
     }
