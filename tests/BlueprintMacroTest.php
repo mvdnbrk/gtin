@@ -3,8 +3,8 @@
 namespace Mvdnbrk\Gtin\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Schema\ColumnDefinition;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Fluent;
 
 class BlueprintMacroTest extends TestCase
 {
@@ -23,7 +23,7 @@ class BlueprintMacroTest extends TestCase
     {
         $table = new Blueprint('products');
 
-        $this->assertInstanceOf(ColumnDefinition::class, $table->gtin());
+        $this->assertInstanceOf(Fluent::class, $table->gtin());
     }
 
     /** @test */
