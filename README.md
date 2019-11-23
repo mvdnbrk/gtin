@@ -70,6 +70,30 @@ is_gtin('1300000000000')    // returns true
 is_gtin('1234567891234')    // returns false
 ```
 
+### Migrations
+
+This package contains a helper method to create a GTIN column in your database table:
+
+```php
+Schema::table('products', function (Blueprint $table) {
+    $table->gtin();
+});
+```
+
+If you would like to customize the column name and/or length you may pass these as parameters:
+
+```php
+$table->gtin('ean13', 13);
+```
+
+To drop the column you may use the `dropGtin` method:
+
+```php
+Schema::table('products', function (Blueprint $table) {
+    $table->dropGtin();
+});
+```
+
 ## Testing
 
 ``` bash
