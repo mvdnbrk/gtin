@@ -3,6 +3,7 @@
 namespace Mvdnbrk\Gtin\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Schema\ColumnDefinition;
 use Illuminate\Support\Facades\Schema;
 
 class BlueprintMacroTest extends TestCase
@@ -15,6 +16,14 @@ class BlueprintMacroTest extends TestCase
         });
 
         $this->assertEquals('string', Schema::getColumnType('products', 'gtin'));
+    }
+
+    /** @test */
+    public function it_is_chainable()
+    {
+        $table = new Blueprint('products');
+
+        $this->assertInstanceOf(ColumnDefinition::class, $table->gtin());
     }
 
     /** @test */
