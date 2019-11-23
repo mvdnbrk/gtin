@@ -6,6 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Mvdnbrk\Gtin\Validator as GtinValidator;
 
 class GtinServiceProvider extends ServiceProvider
 {
@@ -19,7 +20,7 @@ class GtinServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'gtin');
 
         Validator::extend('gtin', function ($attribute, $value) {
-            return is_gtin($value);
+            return GtinValidator::isGtin($value);
         });
 
         Validator::replacer('gtin', function ($message, $attribute) {
