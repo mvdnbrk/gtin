@@ -208,6 +208,21 @@ class GtinValidationTest extends TestCase
     }
 
     /** @test */
+    public function it_can_have_a_custom_error_message()
+    {
+        $validator = Validator::make(
+            ['field' => 'invalid-gtin'],
+            ['field' => 'gtin'],
+            ['gtin' => 'Custom GTIN validation error message.']
+        );
+
+        $this->assertEquals(
+            'Custom GTIN validation error message.',
+            $validator->errors()->first('field')
+        );
+    }
+
+    /** @test */
     public function it_has_a_helper_function()
     {
         $this->assertTrue(is_gtin('1300000000000'));
