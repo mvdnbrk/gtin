@@ -91,6 +91,8 @@ To drop the column you may use the `dropGtin` method:
 ```php
 Schema::table('products', function (Blueprint $table) {
     $table->dropGtin();
+    
+    // $table->dropGtin('ean13');
 });
 ```
 
