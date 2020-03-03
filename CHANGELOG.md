@@ -86,7 +86,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.4.2...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.5.0...HEAD
+[v2.5.0]: https://github.com/mvdnbrk/gtin/compare/v2.4.2...v2.5.0
 [v2.4.2]: https://github.com/mvdnbrk/gtin/compare/v2.4.1...v2.4.2
 [v2.4.1]: https://github.com/mvdnbrk/gtin/compare/v2.4.0...v2.4.1
 [v2.4.0]: https://github.com/mvdnbrk/gtin/compare/v2.3.3...v2.4.0
