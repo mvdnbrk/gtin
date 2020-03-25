@@ -9,7 +9,7 @@ class Validator
      *
      * @var array
      */
-    protected static array $cache = [];
+    protected static $cache = [];
 
     /**
      * Determine whether the given value is a valid
