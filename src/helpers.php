@@ -9,7 +9,7 @@ if (! function_exists('is_gtin')) {
      * @param  string|int  $value
      * @return bool
      */
-    function is_gtin($value)
+    function is_gtin($value): bool
     {
         return GtinValidator::isGtin($value);
     }

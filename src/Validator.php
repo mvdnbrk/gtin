@@ -18,7 +18,7 @@ class Validator
      * @param  string|int  $value
      * @return bool
      */
-    public static function isGtin($value)
+    public static function isGtin($value): bool
     {
         if (! is_numeric($value)) {
             return false;
@@ -42,7 +42,7 @@ class Validator
      * @param  string|int  $value
      * @return bool
      */
-    protected static function calculate($value)
+    protected static function calculate($value): bool
     {
         return substr($value, 0, -1).collect(str_split($value))
             ->slice(0, -1)

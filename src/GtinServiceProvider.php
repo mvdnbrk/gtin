@@ -15,7 +15,7 @@ class GtinServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'gtin');
 
@@ -37,7 +37,7 @@ class GtinServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         $this->offerPublishing();
         $this->registerBlueprintMacros();
@@ -48,7 +48,7 @@ class GtinServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function offerPublishing()
+    protected function offerPublishing(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
@@ -62,7 +62,7 @@ class GtinServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function registerBlueprintMacros()
+    protected function registerBlueprintMacros(): void
     {
         if ($this->app->runningInConsole()) {
             Blueprint::macro('gtin', function ($column = 'gtin', $length = 14) {
