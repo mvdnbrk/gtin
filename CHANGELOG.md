@@ -4,6 +4,11 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.5.1] - 2020-03-25
+
+### Added
+- Added return type declarations. [`8099676`](https://github.com/mvdnbrk/gtin/commit/80996768bdcc2f08dd66113d8675294afdcf52dd)
+
 ## [v2.5.0] - 2020-03-03
 
 ### Added
@@ -86,7 +91,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.5.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.5.1...HEAD
+[v2.5.1]: https://github.com/mvdnbrk/gtin/compare/v2.5.0...v2.5.1
 [v2.5.0]: https://github.com/mvdnbrk/gtin/compare/v2.4.2...v2.5.0
 [v2.4.2]: https://github.com/mvdnbrk/gtin/compare/v2.4.1...v2.4.2
 [v2.4.1]: https://github.com/mvdnbrk/gtin/compare/v2.4.0...v2.4.1
