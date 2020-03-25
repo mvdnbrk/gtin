@@ -10,11 +10,6 @@ use Mvdnbrk\Gtin\Validator as GtinValidator;
 
 class GtinServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
     public function boot(): void
     {
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'gtin');
@@ -32,22 +27,12 @@ class GtinServiceProvider extends ServiceProvider
         });
     }
 
-    /**
-     * Register the application services.
-     *
-     * @return void
-     */
     public function register(): void
     {
         $this->offerPublishing();
         $this->registerBlueprintMacros();
     }
 
-    /**
-     * Setup the resource publishing.
-     *
-     * @return void
-     */
     protected function offerPublishing(): void
     {
         if ($this->app->runningInConsole()) {
@@ -57,11 +42,6 @@ class GtinServiceProvider extends ServiceProvider
         }
     }
 
-    /**
-     * Register the blueprint macros.
-     *
-     * @return void
-     */
     protected function registerBlueprintMacros(): void
     {
         if ($this->app->runningInConsole()) {
