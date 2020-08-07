@@ -4,7 +4,7 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
-## [v2.6.0] - 2020-??-??
+## [v2.6.0] - 2020-08-07
 
 ### Added
 - Added support for Laravel 8. [`#11`](https://github.com/mvdnbrk/gtin/pull/11)
