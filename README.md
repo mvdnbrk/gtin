@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
+[![Tests][ico-tests]][link-tests]
 [![StyleCI][ico-styleci]][link-styleci]
 [![Total Downloads][ico-downloads]][link-downloads]
 
@@ -117,12 +117,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/mvdnbrk/gtin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/mvdnbrk/gtin/master.svg?style=flat-square
+[ico-tests]: https://img.shields.io/travis/mvdnbrk/gtin/master.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mvdnbrk/gtin.svg?style=flat-square
 [ico-styleci]: https://github.styleci.io/repos/91986121/shield?style=flat-square&branch=master
 
 [link-packagist]: https://packagist.org/packages/mvdnbrk/gtin
-[link-travis]: https://travis-ci.org/mvdnbrk/gtin
+[link-tests]: https://travis-ci.org/mvdnbrk/gtin
 [link-downloads]: https://packagist.org/packages/mvdnbrk/gtin
 [link-styleci]: https://github.styleci.io/repos/91986121
 [link-author]: https://github.com/mvdnbrk
