@@ -1,5 +1,6 @@
 # GTIN / EAN / UPC Validation for Laravel
 
+![PHP version][ico-php-version]
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Tests][ico-tests]][link-tests]
@@ -115,6 +116,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
+[ico-php-version]: https://img.shields.io/packagist/php-v/mvdnbrk/gtin?style=flat-square
 [ico-version]: https://img.shields.io/packagist/v/mvdnbrk/gtin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-tests]: https://img.shields.io/travis/mvdnbrk/gtin/master.svg?style=flat-square
