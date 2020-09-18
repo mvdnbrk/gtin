@@ -12,7 +12,7 @@ Extension for the Laravel validation class.
 
 You can install the package via composer:
 
-``` bash
+```bash
 $ composer require mvdnbrk/gtin
 ```
 
@@ -94,7 +94,7 @@ Schema::table('products', function (Blueprint $table) {
 
 ## Testing
 
-``` bash
+```bash
 $ composer test
 ```
 
