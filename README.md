@@ -2,9 +2,9 @@
 
 ![PHP version][ico-php-version]
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
+[![Software License][ico-license]]
 [![Tests][ico-tests]][link-tests]
-[![StyleCI][ico-code-style]][link-code-style]
+[![Code style][ico-code-style]][link-code-style]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Extension for the Laravel validation class.
