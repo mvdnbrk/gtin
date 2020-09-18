@@ -4,7 +4,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Tests][ico-tests]][link-tests]
-[![StyleCI][ico-styleci]][link-styleci]
+[![StyleCI][ico-code-style]][link-code-style]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Extension for the Laravel validation class.
@@ -109,8 +109,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Mark van den Broek](https://github.com/mvdnbrk)
-- [All Contributors](../../contributors)
+- [Mark van den Broek][link-author]
+- [All Contributors][link-contributors]
 
 ## License
 
@@ -119,12 +119,14 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-php-version]: https://img.shields.io/packagist/php-v/mvdnbrk/gtin?style=flat-square
 [ico-version]: https://img.shields.io/packagist/v/mvdnbrk/gtin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-tests]: https://img.shields.io/travis/mvdnbrk/gtin/master.svg?style=flat-square
+[ico-tests]: https://img.shields.io/github/workflow/status/mvdnbrk/gtin/tests/main?label=tests&style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mvdnbrk/gtin.svg?style=flat-square
-[ico-styleci]: https://github.styleci.io/repos/91986121/shield?style=flat-square&branch=main 
+[ico-code-style]: https://github.styleci.io/repos/91986121/shield?style=flat-square&branch=main 
 
 [link-packagist]: https://packagist.org/packages/mvdnbrk/gtin
-[link-tests]: https://travis-ci.org/mvdnbrk/gtin
+[link-tests]: https://github.com/mvdnbrk/gtin/actions?query=workflow%3Atests
 [link-downloads]: https://packagist.org/packages/mvdnbrk/gtin
-[link-styleci]: https://github.styleci.io/repos/91986121
+[link-code-style]: https://github.styleci.io/repos/91986121
 [link-author]: https://github.com/mvdnbrk
+[link-contributors]: ../../contributors
+[link-contributors]: ../../contributors
