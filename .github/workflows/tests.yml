@@ -10,7 +10,7 @@ jobs:
       matrix:
         php: [7.4, 7.3, 7.2, 7.1]
         laravel: [^8.0, ^7.0, ^6.0, ^5.5]
-        dependency-version: [prefer-lowest, prefer-stable]
+        stability: [prefer-lowest, prefer-stable]
         include:
           - laravel: ^5.5
             testbench: ^3.5
@@ -22,7 +22,7 @@ jobs:
             testbench: ^6.0
         exclude:
           - laravel: ^5.5
-            dependency-version: prefer-lowest
+            stability: prefer-lowest
           - php: 7.1
             laravel: ^6.0
           - php: 7.1
@@ -32,17 +32,11 @@ jobs:
           - php: 7.2
             laravel: ^8.0
 
-    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.dependency-version }}
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.stability }}
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.composer/cache/files
-          key: dependencies-composer-${{ hashFiles('composer.json') }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -50,10 +44,15 @@ jobs:
           php-version: ${{ matrix.php }}
           coverage: none
 
+      - name: Setup Problem Matches
+        run: |
+          echo "::add-matcher::${{ runner.tool_cache }}/php.json"
+          echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
       - name: Install dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
+          composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-suggest
 
       - name: Execute tests
         run: vendor/bin/phpunit
