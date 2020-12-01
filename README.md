@@ -129,4 +129,3 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-code-style]: https://github.styleci.io/repos/91986121
 [link-author]: https://github.com/mvdnbrk
 [link-contributors]: ../../contributors
-[link-contributors]: ../../contributors
