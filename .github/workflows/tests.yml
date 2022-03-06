@@ -9,7 +9,7 @@ jobs:
       fail-fast: true
       matrix:
         php: [8.0, 7.4, 7.3, 7.2, 7.1]
-        laravel: [^8.0, ^7.0, ^6.0, ^5.5]
+        laravel: [^9.0, ^8.0, ^7.0, ^6.0, ^5.5]
         stability: [prefer-lowest, prefer-stable]
         include:
           - laravel: ^5.5
@@ -20,6 +20,8 @@ jobs:
             testbench: ^5.0
           - laravel: ^8.0
             testbench: ^6.0
+          - laravel: ^9.0
+            testbench: ^7.0
         exclude:
           - laravel: ^5.5
             stability: prefer-lowest
