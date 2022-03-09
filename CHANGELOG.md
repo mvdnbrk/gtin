@@ -7,12 +7,12 @@ All notable changes to `gtin` will be documented in this file.
 ## [v2.8.0] - 2022-03-07
 
 ### Added
-- Support for Laravel 9. [`#11`](https://github.com/mvdnbrk/gtin/pull/15)
+- Support for Laravel 9. [`#15`](https://github.com/mvdnbrk/gtin/pull/15)
 
 ## [v2.7.0] - 2020-12-01
 
 ### Added
-- Support for PHP 8. [`#11`](https://github.com/mvdnbrk/gtin/pull/13)
+- Support for PHP 8. [`#13`](https://github.com/mvdnbrk/gtin/pull/13)
 
 ## [v2.6.0] - 2020-08-07
 
