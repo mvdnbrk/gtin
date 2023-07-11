@@ -25,7 +25,7 @@ jobs:
           - laravel: ^9.0
             testbench: ^7.0
           - laravel: ^10.0
-            testbench: ^7.0
+            testbench: ^8.0
         exclude:
           - laravel: ^5.5
             stability: prefer-lowest
