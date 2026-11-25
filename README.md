@@ -7,7 +7,7 @@
 [![Code style][ico-code-style]][link-code-style]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Extension for the Laravel validation class.
+Validate GTIN-8, GTIN-12 (UPC), GTIN-13 (EAN) and GTIN-14 codes in Laravel.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ composer require mvdnbrk/gtin
 Now you can use the `gtin` validation to validate a GTIN-8, GTIN-12, GTIN-13 or GTIN-14:
 
 ```php
-$this->validate($request, [
+$request->validate([
     'somefield' => 'gtin',
 ]);
 ```
@@ -52,9 +52,9 @@ Another option is to define the error message by adding your message to the `cus
 ],
 ```
 
- Or with a JSON file stored in `lang/{locale}.json`
+Or with a JSON file stored in `lang/{locale}.json`
 
-```javascript
+```json
 {
     "validation.custom.somefield.gtin": "Please enter a valid GTIN!"
 }
