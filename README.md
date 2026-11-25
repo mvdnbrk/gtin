@@ -9,12 +9,17 @@
 
 Extension for the Laravel validation class.
 
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 12 or 13 (Laravel 13 requires PHP 8.3 or higher)
+
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-$ composer require mvdnbrk/gtin
+composer require mvdnbrk/gtin
 ```
 
 ## Usage
@@ -35,9 +40,9 @@ You may publish the language files with the following `artisan` command:
 php artisan vendor:publish --tag=gtin-lang
 ```
 
-Now you can customize the error message in `resources/lang/vendor/gtin/{loale}/validation.php`.
+Now you can customize the error message in `lang/vendor/gtin/{locale}/validation.php`.
 
-Another option is to define the error message by adding your message to the `custom` array in the `resources/lang/{locale}/validation.php` language file.
+Another option is to define the error message by adding your message to the `custom` array in the `lang/{locale}/validation.php` language file.
 
 ```php
 'custom' => [
@@ -47,7 +52,7 @@ Another option is to define the error message by adding your message to the `cus
 ],
 ```
 
- Or with a JSON file stored in `resources/lang/{locale}.json`
+ Or with a JSON file stored in `lang/{locale}.json`
 
 ```javascript
 {
@@ -96,8 +101,12 @@ Schema::table('products', function (Blueprint $table) {
 ## Testing
 
 ```bash
-$ composer test
+composer test
 ```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 ## Contributing
 
@@ -119,7 +128,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-php-version]: https://img.shields.io/packagist/php-v/mvdnbrk/gtin?style=flat-square
 [ico-version]: https://img.shields.io/packagist/v/mvdnbrk/gtin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-tests]: https://img.shields.io/github/workflow/status/mvdnbrk/gtin/tests/main?label=tests&style=flat-square
+[ico-tests]: https://img.shields.io/github/actions/workflow/status/mvdnbrk/gtin/tests.yml?branch=main&label=tests&style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mvdnbrk/gtin.svg?style=flat-square
 [ico-code-style]: https://github.styleci.io/repos/91986121/shield?style=flat-square&branch=main 
 
