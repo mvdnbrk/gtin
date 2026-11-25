@@ -4,7 +4,7 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
-## [v3.0.0] - Unreleased
+## [v3.0.0] - 2026-11-25
 
 ### Added
 - Added support for Laravel 12 and 13.
