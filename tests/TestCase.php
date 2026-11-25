@@ -13,7 +13,7 @@ abstract class TestCase extends Orchestra
      * @param  \Illuminate\Foundation\Application  $app
      * @return void
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         $config = $app->get('config');
 
@@ -31,7 +31,7 @@ abstract class TestCase extends Orchestra
      * @param  \Illuminate\Foundation\Application  $app
      * @return array
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             GtinServiceProvider::class,

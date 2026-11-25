@@ -37,7 +37,7 @@ class GtinServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/gtin'),
+                __DIR__.'/../resources/lang' => lang_path('vendor/gtin'),
             ], 'gtin-lang');
         }
     }

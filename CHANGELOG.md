@@ -4,6 +4,21 @@ All notable changes to `gtin` will be documented in this file.
 
 ## [Unreleased]
 
+## [v3.0.0] - Unreleased
+
+### Added
+- Added support for Laravel 12 and 13.
+- Added support for PHP 8.2, 8.3, 8.4 and 8.5.
+- Added support for PHPUnit 11 and 12.
+
+### Changed
+- Requires PHP 8.2 or higher.
+- Language files are published to `lang/vendor/gtin` (the `lang_path()`) instead of `resources/lang/vendor/gtin`.
+
+### Removed
+- Dropped support for Laravel 5.5 to 9.
+- Dropped support for PHP 7.1 to 8.1.
+
 ## [v2.8.0] - 2022-03-07
 
 ### Added
@@ -106,7 +121,8 @@ All notable changes to `gtin` will be documented in this file.
 ### Added
 - Added support for Laravel 5.8.
 
-[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v2.8.0...HEAD
+[Unreleased]: https://github.com/mvdnbrk/gtin/compare/v3.0.0...HEAD
+[v3.0.0]: https://github.com/mvdnbrk/gtin/compare/v2.8.0...v3.0.0
 [v2.8.0]: https://github.com/mvdnbrk/gtin/compare/v2.7.0...v2.8.0
 [v2.7.0]: https://github.com/mvdnbrk/gtin/compare/v2.6.0...v2.7.0
 [v2.6.0]: https://github.com/mvdnbrk/gtin/compare/v2.5.1...v2.6.0

@@ -4,11 +4,12 @@ namespace Mvdnbrk\Gtin\Tests;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Validator;
+use PHPUnit\Framework\Attributes\Test;
 
 class TranslationTest extends TestCase
 {
-    /** @test */
-    public function an_error_message_gets_translated()
+    #[Test]
+    public function an_error_message_gets_translated(): void
     {
         App::setLocale('nl');
 
