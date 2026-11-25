@@ -4,7 +4,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Tests][ico-tests]][link-tests]
-[![Code style][ico-code-style]][link-code-style]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Validate GTIN-8, GTIN-12 (UPC), GTIN-13 (EAN) and GTIN-14 codes in Laravel.
@@ -130,11 +129,9 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-tests]: https://img.shields.io/github/actions/workflow/status/mvdnbrk/gtin/tests.yml?branch=main&label=tests&style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mvdnbrk/gtin.svg?style=flat-square
-[ico-code-style]: https://github.styleci.io/repos/91986121/shield?style=flat-square&branch=main 
 
 [link-packagist]: https://packagist.org/packages/mvdnbrk/gtin
 [link-tests]: https://github.com/mvdnbrk/gtin/actions?query=workflow%3Atests
 [link-downloads]: https://packagist.org/packages/mvdnbrk/gtin
-[link-code-style]: https://github.styleci.io/repos/91986121
 [link-author]: https://github.com/mvdnbrk
 [link-contributors]: ../../contributors
