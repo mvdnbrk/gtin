@@ -5,29 +5,30 @@ namespace Mvdnbrk\Gtin\Tests;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Fluent;
+use PHPUnit\Framework\Attributes\Test;
 
 class BlueprintMacroTest extends TestCase
 {
-    /** @test */
-    public function it_can_add_the_gtin_column()
+    #[Test]
+    public function it_can_add_the_gtin_column(): void
     {
         Schema::create('products', function (Blueprint $table) {
             $table->gtin();
         });
 
-        $this->assertEquals('string', Schema::getColumnType('products', 'gtin'));
+        $this->assertSame('varchar', Schema::getColumnType('products', 'gtin'));
     }
 
-    /** @test */
-    public function it_is_chainable()
+    #[Test]
+    public function it_is_chainable(): void
     {
-        $table = new Blueprint('products');
+        $table = new Blueprint(Schema::getConnection(), 'products');
 
         $this->assertInstanceOf(Fluent::class, $table->gtin());
     }
 
-    /** @test */
-    public function it_can_add_the_gtin_column_with_a_custom_name()
+    #[Test]
+    public function it_can_add_the_gtin_column_with_a_custom_name(): void
     {
         Schema::create('products', function (Blueprint $table) {
             $table->gtin('ean13');
@@ -38,8 +39,8 @@ class BlueprintMacroTest extends TestCase
         ], Schema::getColumnListing('products'));
     }
 
-    /** @test */
-    public function it_can_drop_the_gtin_column()
+    #[Test]
+    public function it_can_drop_the_gtin_column(): void
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -55,8 +56,8 @@ class BlueprintMacroTest extends TestCase
         ], Schema::getColumnListing('products'));
     }
 
-    /** @test */
-    public function it_can_drop_the_gtin_column_with_a_custom_name()
+    #[Test]
+    public function it_can_drop_the_gtin_column_with_a_custom_name(): void
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
