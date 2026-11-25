@@ -16,7 +16,6 @@ class Validator
      * Global Trade Item Number (GTIN).
      *
      * @param  string|int  $value
-     * @return bool
      */
     public static function isGtin($value): bool
     {
@@ -40,7 +39,6 @@ class Validator
      * a correct check digit.
      *
      * @param  string|int  $value
-     * @return bool
      */
     protected static function calculate($value): bool
     {

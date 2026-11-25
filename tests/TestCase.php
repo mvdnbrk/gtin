@@ -2,6 +2,7 @@
 
 namespace Mvdnbrk\Gtin\Tests;
 
+use Illuminate\Foundation\Application;
 use Mvdnbrk\Gtin\GtinServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -10,8 +11,7 @@ abstract class TestCase extends Orchestra
     /**
      * Define environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
-     * @return void
+     * @param  Application  $app
      */
     protected function getEnvironmentSetUp($app): void
     {
@@ -28,8 +28,7 @@ abstract class TestCase extends Orchestra
     /**
      * Get package providers.
      *
-     * @param  \Illuminate\Foundation\Application  $app
-     * @return array
+     * @param  Application  $app
      */
     protected function getPackageProviders($app): array
     {
